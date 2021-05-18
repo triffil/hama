@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo logo" href="#">
+          <img class="logo__img" src="img/Лого.svg" alt="Logo">
+        </a>
+        <form class="header__search">
+          <input class="header_search-input" type="search" name="search-input" placeholder="Search">
+          <button class="header__search-button" type="submit">
+            <svg class="icon icon-search header__search-img" width="19" height="19">
+              <use href="img/icons.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <button class="header__profile">
+          <span class="header__profile-text">Мой профиль</span>
+          <svg class="icon icon-profile" width="10px" height="6px">
+            <use xlink:href="img/icons.svg#arrow-down"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- /.header -->
+  <div class="container">
+    <div class="wrapper-max">
+      <section class="category-list">
+        <div class="category-list__inner">
+          <h3 class="category-list__name">Найдите магазин по категориям товаров</h3>
+          <a href="#" class="category-list__see-more see-more">Смотреть больше</a>
+        </div>
+        <!-- /.category-list__inner -->
+        <div class="category-list__inner-content">
+          <div class="category-list__button category-list__button-prev">
+            <svg class="icon icon-left" width="40" height="40">
+              <use xlink:href="img/icons.svg#left"></use>
+            </svg>
+          </div>
+          <div class="category-list__button category-list__button-next">
+            <svg class="icon icon-right" width="40" height="40">
+              <use xlink:href="img/icons.svg#right"></use>
+            </svg>
+          </div>
+    
+          <div class="swiper-container category-list__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide category-list__item">
+                <div class="category-list__card">
+                  <img src="img/dude.png" alt="" class="category-list__item-img">
+                </div>
+                <h3 class="category-list__title">Категория 1</h3>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide category-list__item">
+                <div class="category-list__card">
+                  <img src="img/dude.png" alt="" class="category-list__item-img">
+                </div>
+                <h3 class="category-list__title">Категория 2</h3>
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide category-list__item">
+                <div class="category-list__card">
+                  <img src="img/dude.png" alt="" class="category-list__item-img">
+                </div>
+                <h3 class="category-list__title">Категория 3</h3>
+                <!-- <h3 class="category-title">Dude You Re Getting A Telescope</h3> -->
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide category-list__item">
+                <div class="category-list__card">
+                  <img src="img/dude.png" alt="" class="category-list__item-img">
+                </div>
+                <h3 class="category-list__title">Категория 4</h3>
+                <!-- <h3 class="category-title">Dude You Re Getting A Telescope</h3> -->
+              </div>
+              <!-- /.swiper-slide -->
+              <div class="swiper-slide category-list__item">
+                <div class="category-list__card">
+                  <img src="img/dude.png" alt="" class="category-list__item-img">
+                </div>
+                <h3 class="category-list__title">Категория 5</h3>
+                <!-- <h3 class="category-title">Dude You Re Getting A Telescope</h3> -->
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper-container /.recommended-slider -->
+    
+        </div>
+      </section>
+      <!-- /.category-list -->
+    
+      <div class="wrapper-min">
+        <section class="section-authorization">
+          <div class="section-authorization__login">
+            <div class="section-authorization__title">Уже зарегистрированы?</div>
+            <button class="section-authorization__button section-authorization__button-login">Войти в систему</button>
+          </div>
+          <div class="section-authorization__line"></div>
+          <div class="section-authorization__registration">
+            <div class="section-authorization__title">Ещё нет аккаунта?</div>
+            <button class="section-authorization__button section-authorization__button-registration">Зарегистрироваться</button>
+          </div>
+        </section>
+        <section class="section-dop-info section-sell">
+          <h4 class="section-dop-info__title section-sell__title">Продавай на Hama!</h4>
+          <button class="section-dop-info__button section-sell__button">Подробнее</button>
+        </section>
+        <!-- <section class="section-dop-info seller not-visible">
+          <h4 class="section-dop-info__title seller__title">Вы теперь продавец!</h4>
+          <button class="section-dop-info__button seller__button">Торговать</button>
+        </section>
+        <section class="section-dop-info buy not-visible">
+          <h4 class="section-dop-info__title buy__title">Покупай на Hama!</h4>
+          <button class="section-dop-info__button buy__button">Перейти к покупкам</button>
+        </section> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-registration not-visible">
+    <div class="modal-registration__body">
+      <div class="modal-registration__content">
+        <a class="modal-registration__logo" href="#">
+          <img class="logo__img" src="img/Лого.svg" alt="Logo">
+        </a>
+        <div class="modal-registration__decor-line"></div>
+        <div class="modal-registration__inner">
+          <h2 class="modal-registration__title">Регистрация</h2>
+          <button class="modal-registration__button-login">Вход</button>
+        </div>
+        <form class="modal-registration__form">
+          <div class="modal-registration__item">
+            <h3 class="modal-registration__subtitle modal-registration__email">Email-адрес</h3>
+            <input class="modal-registration__input modal-registration__email-input" type="text">
+          </div>
+          <div class="modal-registration__item">
+            <h3 class="modal-registration__subtitle modal-registration__password">Пароль</h3>
+            <input class="modal-registration__input modal-registration__password-input" type="text">
+          </div>
+          <div class="modal-registration__item">
+            <h3 class="modal-registration__subtitle modal-registration__confirm-password">Повторите пароль</h3>
+            <input class="modal-registration__input modal-registration__confirm-password-input" type="text">
+          </div>
+          <div class="modal-registration__register">
+            <button class="modal-registration__register-button">Зарегистрироваться</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /.modal-registration -->
+
+  <div class="modal-authorization not-visible">
+    <div class="modal-authorization__body">
+      <div class="modal-authorization__content">
+        <a class="modal-authorization__logo logo" href="#">
+          <img class="logo__img" src="img/Лого.svg" alt="Logo">
+        </a>
+        <div class="modal-authorization__decor-line"></div>
+        <div class="modal-authorization__inner">
+          <h2 class="modal-authorization__title">Вход</h2>
+          <button class="modal-authorization__button-registration">Регистрация</button>
+        </div>
+        <form class="modal-authorization__form">
+          <div class="modal-authorization__item">
+            <h3 class="modal-authorization__subtitle modal-authorization__email">Email-адрес</h3>
+            <input class="modal-authorization__input modal-authorization__email-input" type="text">
+          </div>
+          <div class="modal-authorization__item">
+            <h3 class="modal-authorization__subtitle modal-authorization__password">Пароль</h3>
+            <input class="modal-authorization__input modal-authorization__password-input" type="text">
+          </div>
+          
+          <div class="modal-authorization__login">
+            <button class="modal-authorization__login-button">Войти</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="advantages">
+    <div class="advantages__type">
+      <h3 class="advantages__title">Для покупателей</h3>
+      <div class="advantages__item-wrapper">
+        <div class="advantages__item">
+          <svg class="icon advantages__icon icon-profit-price" >
+            <use xlink:href="img/icons.svg#profit-price"></use>
+          </svg>
+          <div class="advantages__inner">
+            <h4 class="advantages__subtitle">Выгодные цены</h4>
+            <p class="advantages__description">А ещё качественные товары и много скидок</p>
+          </div>
+        </div>
+        <div class="advantages__decor-line--first"></div>
+        <div class="advantages__item">
+          <svg class="icon advantages__icon icon-talk-seller" >
+            <use xlink:href="img/icons.svg#talk-seller"></use>
+          </svg>
+          <div class="advantages__inner">
+            <h4 class="advantages__subtitle">Общение с продавцом</h4>
+            <p class="advantages__description">Договаривайтесь о выгодных условиях покупки через чат</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advantages__type">
+      <h3 class="advantages__title">Для продавцов</h3>
+      <div class="advantages__item-wrapper">
+        <div class="advantages__item">
+          <svg class="icon advantages__icon icon-profit-price">
+            <use xlink:href="img/icons.svg#profit-price"></use>
+          </svg>
+          <div class="advantages__inner">
+            <h4 class="advantages__subtitle">Выгодные условия</h4>
+            <p class="advantages__description">Оплати подписку на сервис и начинай зарабатывать</p>
+          </div>
+        </div>
+        <div class="advantages__decor-line--second"></div>
+        <div class="advantages__item">
+          <svg class="icon advantages__icon icon-talk-seller">
+            <use xlink:href="img/icons.svg#talk-seller"></use>
+          </svg>
+          <div class="advantages__inner">
+            <h4 class="advantages__subtitle">Зарабатывай больше</h4>
+            <p class="advantages__description">Увеличь прибыль, создав несколько магазинов</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
